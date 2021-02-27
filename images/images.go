@@ -25,7 +25,7 @@ func retag(imgName string) (name.Tag, error) {
 	return tag, nil
 }
 
-func process(imgName string) (string, error) {
+func Process(imgName string) (string, error) {
 	img, err := crane.Pull(imgName)
 	if err != nil {
 		return "", err
